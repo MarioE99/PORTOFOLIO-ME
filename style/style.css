@@ -409,7 +409,7 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        max-height: 550px;
+        max-height: 500px;
         width: 100%;
        
    
@@ -419,15 +419,10 @@ nav{
 
     .container__img img{
 
-        width: 350px;
+        width: 300px;
         border: 6px solid black;
         padding: 10px;
  
-   
-        
-        
-     
-       
 
      
     }
@@ -436,14 +431,11 @@ nav{
 
         display: none;
         
-        
-
+    
 
     }
 
   
-
-    
     .section__info{
 
         padding: 5px;
@@ -451,9 +443,15 @@ nav{
         margin: 0 auto;
     }
 
-    .section__info h3,h2{
+    .section__info h2{
 
-        font-size: 50px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .section__info h3{
+
+        font-size: 30px;
         text-align: center;
     }
 
@@ -462,7 +460,7 @@ nav{
         text-align: justify;
         margin-left: 10%;
         width: 100%;
-        font-size: 20px;
+        font-size: 15px;
 
     }
 
@@ -470,7 +468,7 @@ nav{
 
         width: 100%;
         display: inline-flex;
-        gap: 20px;
+        gap: 30px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -481,6 +479,8 @@ nav{
     .section__info .buttom a{
 
         width: 90%;
+        border-radius: 30px;
+
 
 
     }
@@ -513,7 +513,7 @@ nav{
         border-radius: 100%;
         color: #FAF9F8;
         background-color: black;
-
+        border-radius: 30px;
         
 
 
@@ -525,6 +525,8 @@ nav{
     .works__title{
 
         text-align: center;
+        font-size: 35px;
+        font-weight: bold;
         margin: 0;
         display: block;
         margin-top: 50px;
@@ -538,6 +540,30 @@ nav{
         text-align: center;
 
 
+    }
+
+    .works__item img{
+
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .works__item h3{
+
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .works__item a{
+
+        width: 90%;
+        border-radius: 30px;
+
+    }
+
+    .works__item a:hover{
+
+        border-radius: 30px;
     }
     
 }
