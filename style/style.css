@@ -581,6 +581,11 @@ nav{
 
     /* WORKS */
 
+    .works{
+
+        height: auto;
+    }
+
     .works__title{
 
         text-align: center;
@@ -597,6 +602,7 @@ nav{
         flex-direction: column;
         gap: 5px;
         text-align: center;
+       
 
 
     }
@@ -633,7 +639,6 @@ nav{
 .skills{
 
     width: 100%;
-    height: 80vh;
 
 
 }
@@ -749,6 +754,41 @@ nav{
     width: 90%;
 }
 
+
+@media (max-width:844px){
+
+    .skills{
+        height: auto;
+
+      
+    }
+
+    .items{
+
+        text-align: center;
+        padding: 20px;
+    
+    }
+
+    .number{
+
+        font-size: 20px;
+        border-radius: 50% ;
+    }
+
+
+    .skills__container{
+
+        flex-direction: column ;
+        flex-wrap: wrap;
+
+    }
+
+    .items{
+
+        flex-direction: column;
+    }
+}
 
 
 
