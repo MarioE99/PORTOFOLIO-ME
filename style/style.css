@@ -18,7 +18,7 @@ body{
     font-family: 'Libre Baskerville', serif;
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
-    background-color: #F1EFEF;
+    background-color: white;
     transition: .5s;
 
 }
@@ -446,16 +446,16 @@ nav{
     .container__img{
 
         max-height: 400px;
-        margin: 0;
-   
+        margin: 0 auto;
+        padding: 30px;
 
   
     }
 
     .container__img img{
 
-        border: 6px solid black;
-        padding: 10px;
+        border: 7px solid black;
+        padding: 5px;
         height: 100%;
  
 
