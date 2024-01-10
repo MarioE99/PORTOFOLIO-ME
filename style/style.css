@@ -161,7 +161,7 @@ nav{
     padding: 10px;
     border-radius: 100%;
     color: black;
-    background-color: #FAF9F8;
+    background-color: white;
     transition: .5s;
 
     
@@ -183,19 +183,17 @@ nav{
 
 .container__img{
   margin-left: 100px;
-  background-color: black;
+  background-color: rgba(128, 128, 128, 0.308);
   height: 600px;
-  margin-left: 0 auto;   
-  padding: 10px;
+  padding: 50px;
 
 }
 
 
 .container__img img{
 
-  
-
     height: 100%;
+    border-color: black;
     
 }
 
@@ -621,7 +619,7 @@ nav{
 .skills{
 
     width: 100%;
-    background-color: #EBF3E8;
+    background-color: white;
 
 }
 
