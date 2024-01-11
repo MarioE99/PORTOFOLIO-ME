@@ -11,18 +11,26 @@ mobileMenuButton.addEventListener('click', () => {
 
 //descargar CURRI
 
-var urlDocumento = 'https://github.com/MarioE99/PORTOFOLIO-ME/blob/master/assets/doc/Curr%C3%ADculum-Mario%20Escobar.pdf';
+document.getElementById('descargarPDF').addEventListener('click',function(){
 
 
-var enlaceDescarga = document.getElementById('enlaceDescarga');
 
- 
- enlaceDescarga.href = urlDocumento;
+    var pdfUrl = '..\assets\doc\Currículum-Mario Escobar.pdf';
 
- 
- enlaceDescarga.addEventListener('click', function(event) {
-  
-     event.preventDefault();
+    var pdfName = 'Currículum-Mario Escobar';
 
-     enlaceDescarga.click();
- });
+    var enlace = document.createElement('a');
+
+    enlace.href = pdfUrl;
+
+    enlace.download = pdfName;
+
+    document.body.appendChild(enlace);
+
+    enlace.click();
+
+    document.body.removeChild(enlace);
+
+
+
+});
