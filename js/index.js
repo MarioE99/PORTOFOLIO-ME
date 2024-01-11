@@ -11,5 +11,18 @@ mobileMenuButton.addEventListener('click', () => {
 
 //descargar CURRI
 
-var urlDocumento = '';
+var urlDocumento = 'https://github.com/MarioE99/PORTOFOLIO-ME/blob/master/assets/doc/Curr%C3%ADculum-Mario%20Escobar.pdf';
 
+
+var enlaceDescarga = document.getElementById('enlaceDescarga');
+
+ 
+ enlaceDescarga.href = urlDocumento;
+
+ 
+ enlaceDescarga.addEventListener('click', function(event) {
+  
+     event.preventDefault();
+
+     enlaceDescarga.click();
+ });
