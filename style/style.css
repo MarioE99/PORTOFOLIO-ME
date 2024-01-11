@@ -413,22 +413,40 @@ nav{
 
     .section__container{
 
-        gap: 30px;
+        gap: 80px;
         justify-content: space-around;
 
         
     }
 
+   .section__info .buttom  {
+
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        max-width: 400px;
+        
+    }
+
+   
+    .container__img{
+
+      height: max-content;  
+    
+    }
+
     .container__img img{
 
-        max-width: 400px;
-        padding: 10px;
+        max-height: 400px;
+        padding: 3px;
+        border: 7px solid black ;
 
     }
 
     .skills__container{
 
-        gap: 20px;
+        flex-wrap: wrap;
+        gap: 5px;
     }
 
 }
@@ -682,7 +700,7 @@ nav{
     max-width: 600px;
     width: 100%;
     height: 350px;
-    background-color:#6182644b;
+    background-color:#87cfeb59;
     border-radius: 20px;
     padding: 20px;
     transition: .3s;
@@ -695,7 +713,7 @@ nav{
     transform: translateY(-10px);
     transition:.2s;
     background-color: transparent;
-    border: 7px solid #6182644b;
+    border: 7px solid #87CEEB;
 
 
 }
