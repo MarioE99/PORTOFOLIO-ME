@@ -701,7 +701,7 @@ nav{
     width: 100%;
     height: 350px;
     background-color:#87cfeb59;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
     transition: .3s;
     
@@ -710,9 +710,9 @@ nav{
 
 .items:hover{
 
-    transform: translateY(-10px);
-    transition:.2s;
-    background-color: transparent;
+    transform: translateY(-20px);
+    transition:.4s;
+    background-color: white;
     border: 7px solid #87CEEB;
 
 
@@ -849,6 +849,136 @@ nav{
         flex-direction: column;
     }
 }
+
+
+
+/* CONTACT CSS */
+
+
+.section__contact{
+    height: fit-content;
+    margin-top: 3rem;
+    margin-bottom: 100px;
+  
+
+}
+
+.section__contact .contact__title{
+
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.section__contact .contact__form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    
+}
+
+label{
+
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+    width: 50%;
+}
+
+input[type='text'],input[type='email']{
+
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: .2s ease-in;
+
+}
+
+input[type='text']:focus{
+
+    outline: black;
+    background-color: #61826449;
+    transition: .4s ease-in-out;
+    transform: translateY(3px);
+}
+
+input[type='email']:focus{
+
+    outline: black;
+    background-color: #61826449;
+    transition: .4s ease-in-out;
+    transform: translateY(3px);
+}
+
+input[type='text']:hover{
+    background-color:#61826449;
+    transition: .4s ease-in-out;
+    transform: translateY(3px);
+}
+
+input[type='email']:hover{
+    background-color:#61826449;
+    transition: .4s ease-in-out;
+    transform: translateY(3px);
+}
+
+
+textarea{
+
+    width: 50%;
+    border: 1px solid black;
+    font-size: 20px;
+    outline: none;
+    margin-top: 20px;
+}
+
+input[type='submit']{
+
+    margin-left: 20px;
+    border: 3px solid black;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: black;
+    text-align: center;
+    transition: .3s;
+    margin-right: 20px;
+    margin-left: 0;
+
+}
+
+
+input[type='submit']:hover{
+
+    margin-left: 20px;
+    border: 3px solid black;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    transition: .3s;
+    margin-right: 20px;
+    margin-left: 0;
+
+}
+
 
 
 
