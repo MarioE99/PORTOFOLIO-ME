@@ -478,17 +478,18 @@ nav{
     border-radius: 10px;
     padding: 15px;
     transition: .3s;
-    
+    position: relative;
+    font-size: 17px;
     
 }
 
 .items:hover{
 
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     transition:.4s;
     background-color: white;
     border: 7px solid #87CEEB;
-
+    font-size: 17px;
 
 }
 
@@ -503,23 +504,21 @@ nav{
 
 .items h3{
 
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
     letter-spacing: 2px;
-
+    text-align: justify;
 }
 
 .items p{
-
-    font-size: 18px;
     overflow: hidden;
     width: 100%;
 }
 
 .progressbar{
 
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: 90%;
     height: 10px;
     background-color: gray;
     margin-top: 30px;
@@ -740,6 +739,48 @@ input[type='submit']:hover{
 
     }
 
+    .section__info{
+
+        text-align: center;
+        align-items: center;
+    }
+
+    .section__info p{
+
+        display: inline-block;
+        text-align: center;
+    }
+
+    .buttom,.section__links{
+
+        margin: 10px auto;
+    }
+
+    .section__links{
+
+        margin-top: 20px;
+    }
+
+
+    .skills__container{
+        padding: 10px;
+        gap: 30px;
+    }
+
+    .items{
+
+        height: 400px;
+        position: relative;
+    }
+
+    .progressbar{
+
+        bottom: 50px;
+        width: 90%;
+        position: absolute;
+        margin: 0;
+    }
+
    
 }
 
@@ -955,26 +996,33 @@ input[type='submit']:hover{
     .container__it1,.container__it2{
         display: flex;
         flex-direction: column;
-
-        padding: 25px;
+    
 
     }
 
     .container__it1 .items{
-
-        padding: 4px;
+        padding: 20px; 
     }
 
+    
     .items p {
 
-        height: 50px;
+        height: 120px;
+        text-align: justify;
+        font-size: 16px;
     }
 
     .items{
 
         text-align: center;
-        padding: 30px;
+        padding: 10px;
     
+    }
+
+    .progressbar{
+
+        margin-top: 20px;
+        width: 90%;
     }
 
 
