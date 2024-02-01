@@ -11,26 +11,16 @@ mobileMenuButton.addEventListener('click', () => {
 
 //descargar CURRI
 
-document.getElementById('descargarPDF').addEventListener('click',function(){
+function descargarArchivo(){
 
-
-
-    var pdfUrl = '..\assets\doc\Currículum-Mario Escobar.pdf';
-
-    var pdfName = 'Currículum-Mario Escobar';
 
     var enlace = document.createElement('a');
 
-    enlace.href = pdfUrl;
+    enlace.href = '../assets/doc/Currículum-Mario Escobar.pdf';
 
-    enlace.download = pdfName;
-
-    document.body.appendChild(enlace);
+    enlace.download = 'Currículum-Mario Escobar.pdf';
 
     enlace.click();
 
-    document.body.removeChild(enlace);
 
-
-
-});
+}

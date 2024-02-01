@@ -485,10 +485,10 @@ nav{
 
 .items:hover{
 
-    transform: translateY(-10px);
-    transition:.4s;
+    transform: translateY(-5px);
+    transition:.2s;
     background-color: white;
-    border: 7px solid #87CEEB;
+    border: 2px solid #87CEEB;
     font-size: 17px;
 
 }
@@ -513,6 +513,7 @@ nav{
 .items p{
     overflow: hidden;
     width: 100%;
+    padding: 10px;
 }
 
 .progressbar{
