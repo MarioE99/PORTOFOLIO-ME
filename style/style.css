@@ -136,9 +136,8 @@ span{
 
 .section__links{
 
-    padding: 10px;
-    margin-top: 50px;
-    width: max-content;
+   margin-top: 50px;
+   display: inline-block;
 }
 
 
@@ -185,7 +184,14 @@ span{
     
 }
 
+.section__info{
 
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+
+
+}
 
 .section__info h2{
 
@@ -218,43 +224,38 @@ span{
 
     display: inline-block;
     margin-top: 3rem;
+    width: 90%;
     
     
 
 }
 
+
 .buttom a{
 
-    margin-left: 20px;
     border: 3px solid black;
     font-size: 2rem;
     border-radius: 8px;
-    margin-top: 10px;
     padding: 10px 20px;
     color: black;
     text-align: center;
     transition: .3s;
-    margin-right: 20px;
-    margin-left: 0;
-
+    margin-right: 3s0px
     
 }
 
 
 .buttom a:hover{
 
-    margin-left: 20px;
     border: 3px solid black;
     font-size: 2rem;
-    margin-top: 10px;
     border-radius: 5px;
     padding: 10px 20px;
     color: white;
     text-align: center;
     background-color: black;
     transition: .3s;
-    margin-right: 20px;
-    margin-left: 0;
+
 
     
 }
@@ -312,13 +313,14 @@ span{
 .works__container{
 
     display: flex;
-    flex: 1;
+    flex: 1 ;
     gap: 3rem;
     justify-content: space-around;
     align-items: center;
 }
 
 .works__item{
+
     padding: 20px;
     margin-top: 100px;
     min-width: 300px;
