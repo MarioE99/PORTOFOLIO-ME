@@ -43,6 +43,14 @@ span{
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
   }
+
+  .show{
+
+    animation: moveUpContainer 1s forwards;
+  }
+
+
+  /* keyframes////////////////////////////////////////////////////////////////////////////////// */
   
   @keyframes gradient-animation {
     0% {
@@ -56,8 +64,41 @@ span{
     }
   }
 
+
+  @keyframes moveUp {
+
+    from{
+        transform: translateY(50%);
+    }
+
+    
+    
+  }
+
+  @keyframes moveUpContainer {
+
+    from{
+        transform: translateY(10%);
+        opacity: 0;
+        
+    }
+
+    to{
+
+        opacity: 1;
+    }
+
+    
+    
+  }
+/*  ////////////////////////////////////////////////////////////////////////////////////////// */
+
 /* Header */
 
+.nav{
+
+    animation: moveUp 1s ease;
+}
 
 .header{
 
@@ -71,6 +112,7 @@ span{
     justify-content: space-between;
     z-index: 100;
     padding: 20px;
+    
 
 }
 
@@ -82,7 +124,7 @@ span{
     color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
-    
+    animation: moveUp 2s ease;
 
 }
 
@@ -91,7 +133,7 @@ span{
     font-size: 20px;
     margin-left: 60px;
     color: black;
-    font-weight: 600;
+    font-weight: 300;
     
 
 }
@@ -149,6 +191,7 @@ span{
     justify-content: space-between;
     gap: 15rem;
     min-height: 90vh;
+    animation: moveUpContainer 1s ease-in;
 
 
 }
@@ -302,6 +345,7 @@ span{
 .works{
 
     width: 100%;
+
 
 }
 
@@ -609,7 +653,7 @@ input[type='text'],input[type='email']{
 input[type='text']:focus{
 
     outline: black;
-    background-color: #61826449;
+
     transition: .4s ease-in-out;
     transform: translateY(3px);
 }
@@ -617,19 +661,18 @@ input[type='text']:focus{
 input[type='email']:focus{
 
     outline: black;
-    background-color: #61826449;
     transition: .4s ease-in-out;
     transform: translateY(3px);
 }
 
 input[type='text']:hover{
-    background-color:#61826449;
+   
     transition: .4s ease-in-out;
     transform: translateY(3px);
 }
 
 input[type='email']:hover{
-    background-color:#61826449;
+  
     transition: .4s ease-in-out;
     transform: translateY(3px);
 }

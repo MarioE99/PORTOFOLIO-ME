@@ -18,9 +18,20 @@ function descargarArchivo(){
 
     enlace.href = '../assets/doc/Currículum-Mario Escobar.pdf';
 
-    enlace.download = 'Currículum-Mario Escobar.pdf';
+    enlace.download = 'Currículum-MarioEscobar.pdf';
 
     enlace.click();
 
 
 }
+
+
+window.addEventListener('scroll', function() {
+    var element = document.querySelector('.works');
+    var position = element.getBoundingClientRect().top;
+    var windowHeight = window.innerHeight;
+  
+    if (position < windowHeight) {
+      element.classList.add('.show');
+    }
+  });
