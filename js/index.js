@@ -1,37 +1,30 @@
 // Boton de menu responsivo
 
-const mobileMenuButton = document.getElementById('mobile-menu');
-const navMenu = document.getElementById('menu');
+const mobileMenuButton = document.getElementById("mobile-menu");
+const navMenu = document.getElementById("menu");
 
-mobileMenuButton.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+mobileMenuButton.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
 });
-
-
 
 //descargar CURRI
 
-function descargarArchivo(){
+function descargarArchivo() {
+  var enlace = document.createElement("a");
 
+  enlace.href = "../assets/doc/Currículum-Mario Escobar.pdf";
 
-    var enlace = document.createElement('a');
+  enlace.download = "Currículum-MarioEscobar.pdf";
 
-    enlace.href = '../assets/doc/Currículum-Mario Escobar.pdf';
-
-    enlace.download = 'Currículum-MarioEscobar.pdf';
-
-    enlace.click();
-
-
+  enlace.click();
 }
 
+window.addEventListener("scroll", function () {
+  var element = document.querySelector(".works");
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
 
-window.addEventListener('scroll', function() {
-    var element = document.querySelector('.works');
-    var position = element.getBoundingClientRect().top;
-    var windowHeight = window.innerHeight;
-  
-    if (position < windowHeight) {
-      element.classList.add('.show');
-    }
-  });
+  if (position < windowHeight) {
+    element.classList.add(".show");
+  }
+});
