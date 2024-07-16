@@ -12,9 +12,9 @@ mobileMenuButton.addEventListener("click", () => {
 function descargarArchivo() {
   var enlace = document.createElement("a");
 
-  enlace.href = "../assets/doc/Currículum-Mario Escobar.pdf";
+  enlace.href = "../assets/doc/Currículum-MarioE.pdf";
 
-  enlace.download = "Currículum-MarioEscobar.pdf";
+  enlace.download = "Currículum-MarioE.pdf";
 
   enlace.click();
 }
