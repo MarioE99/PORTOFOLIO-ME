@@ -381,22 +381,21 @@ span {
 .skills__container {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: minmax(400px, 600px) minmax(400px, 600px) minmax(
-      400px,
-      600px
-    );
-  grid-template-rows: repeat(2, 1fr);
-  gap: 3rem;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 40px;
   justify-content: space-around;
   align-items: center;
 }
 
 .items {
-  text-align: left;
-  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   background-color: rgba(128, 128, 128, 0.445);
   border: 4px solid rgba(128, 128, 128, 0.308);
-  padding: 20px;
+  gap: 10px;
   transition: 0.2s;
   font-size: 1rem;
 }
@@ -416,11 +415,11 @@ span {
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 2px;
-  text-align: justify;
+  padding-left: 20px;
 }
 
 .items p {
-  width: 100%;
+  padding: 10px;
   text-align: justify;
   line-height: 2;
   font-size: 1rem;
@@ -428,10 +427,8 @@ span {
 
 .progressbar__container {
 
-  margin-top: 50px;
+  margin-top: 70px;
   width: 100%;
-  
-  
 }
 
 .progressbar {
@@ -454,11 +451,12 @@ span {
   font-size: 1rem;
   margin-left: 90%;
   font-weight: bold;
-  line-height: 20px;
   background-color: #618264;
-  padding: 20px;
+  width: 120px;
+  height: 120px;
+  padding: 15px;
   color: white;
-  border-radius: 100%;
+  border-radius: 50%;
  
 }
 
@@ -632,7 +630,7 @@ input[type="submit"]:hover {
   }
 
   .items {
-    height: 400px;
+
     position: relative;
   }
 
@@ -645,7 +643,7 @@ input[type="submit"]:hover {
 
   .progressbar {
     bottom: 50px;
-    width: 90%;
+    width: 100%;
     position: absolute;
     margin: 0;
   }
@@ -819,14 +817,12 @@ input[type="submit"]:hover {
     
   }
 
-  .progressbar__container{
 
-    width: 200px;
-  }
 
   .progressbar{
 
-    width: 300px;
+    margin-top: 50%;
+   
   }
 
   
