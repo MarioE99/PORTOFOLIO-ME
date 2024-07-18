@@ -428,6 +428,7 @@ span {
 .progressbar__container {
 
   margin-top: 70px;
+  margin-bottom: 40px;
   width: 100%;
 }
 
@@ -571,7 +572,7 @@ input[type="submit"]:hover {
 /* Media queries//////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* Laptop SIZES ////////////////////////////////////////////////////////////////////////////////////////////////*/
-@media (max-width: 1700px) {
+@media screen and (max-width: 1700px) and (min-width: 900px) {
   .section__container {
     gap: 80px;
     justify-content: space-around;
@@ -641,12 +642,7 @@ input[type="submit"]:hover {
 
   }
 
-  .progressbar {
-    bottom: 50px;
-    width: 100%;
-    position: absolute;
-    margin: 0;
-  }
+  
 
 }
 
@@ -660,14 +656,13 @@ input[type="submit"]:hover {
   }
 
   .container__img {
-    min-height: 1rem;
-    margin: 0 auto;
-    padding: 10px;
+    margin: 0px 50px;
+    height: 520px;
   }
 
   .container__img img {
     border: 3px solid black;
-    height: 400px;
+    width: 100%;
   }
 
   .section__info h2 {
@@ -685,16 +680,16 @@ input[type="submit"]:hover {
   .section__info p {
     text-align: justify;
     width: 100%;
-    font-size: 25px;
-    padding: 50px;
+    font-size: 1.5rem;
+    padding: 15px;
   }
 
   .section__info .buttom {
     display: inline-flex;
-    gap: 30px;
+    gap: 40px;
     flex-direction: column;
     justify-content: center;
-    width: 350px;
+    padding: 20px;
   }
 
   .section__info .buttom a {
@@ -703,11 +698,12 @@ input[type="submit"]:hover {
   }
 
   .section__links {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+    padding: 20px;
       
   }
 
@@ -740,15 +736,8 @@ input[type="submit"]:hover {
   .works__container {
     
     flex-direction: column;
-    width: 80%;
-    
-
   
-  }
-
-  .works__item{
-
-    width: 100%;
+  
   }
 
   .works__item img {
@@ -772,10 +761,17 @@ input[type="submit"]:hover {
   }
 
   .works__item > p {
-    font-size: 15px;
+    font-size: 1.2rem;
   }
 
   /* Skills ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+  .skills__container{
+
+    padding: 10px;
+  }
 
   .skills__title {
     font-size: 40px;
@@ -805,24 +801,17 @@ input[type="submit"]:hover {
   .container__it1 .items {
     padding: 20px;
   }
+  
 
   .items > p {
     text-align: justify;
     font-size: 18px;
   }
 
-  .items {
-   
-    width: 100%;
-    
-  }
+  .progressbar__container{
 
-
-
-  .progressbar{
-
-    margin-top: 50%;
-   
+    margin-bottom: 30px;
+    width: 95%;
   }
 
   
