@@ -168,20 +168,26 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 100px;
-  padding-bottom: 190px;
-  gap: 20rem;
+  flex-wrap: wrap;
   animation: moveUpContainer 1s ease-in;
 
+  
 
 }
 
+.container__img img{
+
+  max-width: 400px;
+  border-radius: 20px;
+  padding: 40px;
+  background-color: #faf9f8; 
+}
+
+
+
 .section__links {
   margin-top: 50px;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+
   
 }
 
@@ -202,56 +208,46 @@ span {
   background-color: black;
 }
 
-.container__img {
-  margin-left: 100px;
-  background-color: rgba(128, 128, 128, 0.308);
-  height: 600px;
-  padding: 10px;
-  z-index: 1;
-  box-shadow: 0px 0px 20px black;
-  border-radius: 8px;
+.container__info{
+
+  padding: 20px;
 }
 
-.container__img img {
-  height: 100%;
-  z-index: 1;
-}
-
-.section__info h2 {
+.container__info h2 {
   font-size: 4rem;
   font-weight: 200px;
   letter-spacing: 2px;
   color: rgba(0, 0, 0, 0.836);
 }
 
-.section__info h3 {
+.container__info h3 {
   font-size: 3rem;
   letter-spacing: 2px;
   margin-top: 20px;
   color: #618264;
 }
 
-.section__info p {
+.container__info p {
   font-size: 1.7rem;
-  width: 70%;
   text-align: justify;
-  margin-top: 20px;
   line-height: 1.5;
   color: black;
 }
 
-.section__info .buttom {
+.buttom {
   display: inline-flex;
-  padding-top: 40px;
-  gap: 40px;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
+
 }
+
 
 .buttom a {
   border: 2px solid black;
   font-size: 2rem;
   border-radius: 2px;
   padding: 10px 20px;
+  margin: 10px 20px;
   color: black;
   text-align: center;
   transition: 0.3s;
@@ -385,7 +381,7 @@ span {
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
   gap: 30px;
   justify-content: space-around;
   align-items: center;
@@ -679,78 +675,20 @@ input[type="submit"]:hover {
 /* PHONE RESPONSIVE////////////////////////////////////////////////////////////////////////////////////////// */
 @media screen and (max-width: 900px) {
 
-  
-  .section__container {
-    flex-direction: column;
-    gap: 30px;
-  }
 
-  .container__img {
-    margin: 0px 50px;
-    height: 520px;
-  }
+  /* Container */
 
-  .container__img img {
-    border: 3px solid black;
-    width: 100%;
-  }
+   .container__info{
 
-  .section__info h2 {
-    font-size: 50px;
-    text-align: center;
-    font-weight: bold;
-  }
-
-  .section__info h3 {
-    display: block;
-    font-size: 40px;
-    text-align: center;
-  }
-
-  .section__info p {
-    text-align: justify;
-    width: 100%;
-    font-size: 1.5rem;
-    padding: 15px;
-  }
-
-  .section__info .buttom {
-    display: inline-flex;
-    gap: 40px;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-  }
-
-  .section__info .buttom a {
-    border-radius: 10px;
-    font-weight: bolder;
-  }
-
-  .section__links {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
-    padding: 20px;
-      
-  }
+    justify-content: center;
+    text-align: center;
+   }
 
-  .section__links i {
-    border: 1px solid black;
-    border-radius: 100%;
-    transition: 0.3s;
-    margin: 0;
-  }
+   .buttom {
 
-  .section__links i:hover {
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 100%;
-    color: #faf9f8;
-    background-color: black;
-    border-radius: 30px;
+    flex-direction: column;
+    
   }
 
   /* WORKS  */
